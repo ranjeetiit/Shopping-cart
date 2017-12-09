@@ -23,7 +23,7 @@ let store = createStore(
 );
 
 store.subscribe(()=>{
-	console.log("stiir " , store.getState());
+	
 })
 
 export default store;

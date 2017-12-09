@@ -6,6 +6,12 @@ import CratTotal from './cartTotal';
 import { Link } from 'react-router-dom'
 
 class Checkout extends Component{
+    componentDidUpdate(){
+        if(this.props.cart.items.length == 0) {
+            this.props.history.push("/");
+        }
+    }
+
     updateItem = (type, id) => {
         this.props.updateItem(type , id);
     }
