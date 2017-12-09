@@ -11,11 +11,11 @@ const cartTotal = (props) => {
 				<span className="item_value">${props.actualTotal}</span></p>
 			<p>	
 				<span className="item_key">Discount :</span>  
-				<span className="item_value"> ${props.totalDiscount} </span>
+				<span className="item_value">-${props.totalDiscount} </span>
 			</p>
 			<p>
 				<span className="item_key">Fiction Discount :</span>  
-				<span className="item_value">${props.totalFicDis}</span></p>
+				<span className="item_value">-${props.totalFicDis}</span></p>
 			<p>
 				<span className="item_key">Order Total :</span>	
 				<span className="item_value">${props.totalPrice}</span>
