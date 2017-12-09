@@ -54,6 +54,10 @@ module.exports = {
 		    }
 		})
   ],
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+  },
    resolve: {
     extensions: [".js", ".jsx"],
     modules: [paths.appSrc, "node_modules"],
