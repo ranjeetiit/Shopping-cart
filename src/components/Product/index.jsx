@@ -66,7 +66,7 @@ Product.propTypes = {
     price: PropTypes.number,
     //isInCart: PropTypes.bool.isRequired,
     addToCart: PropTypes.func.isRequired,
-    removeFromCart: PropTypes.func.isRequired,
+    //removeFromCart: PropTypes.func.isRequired,
 }
 
 export default Product;

@@ -49,14 +49,23 @@ function handleCartAdd(state, payload) {
 }
 
 function handleCartRemove(state, payload) {
+	let newState = {...state}.items;
+	let id= payload.productId;
+	let idx = 0;
+	for(let i =0 , len = newState.length; i < len ; i++){
+		if(newState[i].id == id){
+			idx = i;
+			break;
+		}
+	}
+	newState.splice(idx, 1);
     return {
         ...state,
-        items: state.items.filter(id => id !== payload.productId)
+        items: newState
     };
 }
 
 function handleCartUpdate(state , payload){
-	console.log('payload' , payload);
 	const {type , productId } = payload;
 	let newState = {...state}.items;
 	let idx = 0;

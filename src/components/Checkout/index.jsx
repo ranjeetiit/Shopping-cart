@@ -10,8 +10,15 @@ class Checkout extends Component{
         this.props.updateItem(type , id);
     }
 
+    removeFromCart = (id)=>{
+        this.props.removeFromCart(id);
+    }
     handleUpdateItem = (type, id)=> {
         this.updateItem(type , id);
+    }
+
+    remoItemFromCart = (id) =>{
+        this.removeFromCart(id);
     }
 
     render(){
@@ -64,6 +71,7 @@ class Checkout extends Component{
                                 <CartListItem  
                                     list = {item}
                                     updateItem = { this.handleUpdateItem }
+                                    removeFromCart = {this.remoItemFromCart}
                                 />
                               </li>
                           ))}

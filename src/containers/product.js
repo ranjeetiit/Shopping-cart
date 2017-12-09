@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Product from '../components/Product';
 //import { isInCart } from '../reducers/cart';
 
-import { addToCart, removeFromCart } from '../actions'
+import { addToCart } from '../actions'
 
 const mapStateToProps = (state, props) => {
     return {
@@ -11,8 +11,7 @@ const mapStateToProps = (state, props) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    addToCart: (id) => dispatch(addToCart(id)),
-    removeFromCart: (id) => dispatch(removeFromCart(id))
+    addToCart: (id) => dispatch(addToCart(id))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Product);

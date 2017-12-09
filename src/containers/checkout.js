@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Checkout from '../components/checkout';
 import { getProducts } from '../reducers/product';
 import { getItems } from '../reducers/cart';
-import { updateItem } from '../actions';
+import { removeFromCart , updateItem } from '../actions';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -13,6 +13,7 @@ const mapStateToProps = (state, props) => {
 
 
 const mapDispatchToProps = (dispatch) => ({
+	removeFromCart :(id) => dispatch(removeFromCart(id)), 
     updateItem : (type , id) => dispatch(updateItem(type , id))
 })
 export default connect(mapStateToProps,mapDispatchToProps)(Checkout);
