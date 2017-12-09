@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Alert from 'react-s-alert';
 
 class Product extends Component {
     handleClick = () => {
         const { id, addToCart } = this.props;
         addToCart(id);
-        alert("product successfully added");
+        //alert("product successfully added");
+        Alert.success('<h3 class="productAddNotify">Product successfully added ...</h1>', {
+            html: true,
+            position: 'top-right'
+        });
     }
 
     render() {

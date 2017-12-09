@@ -3,10 +3,12 @@ import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
 import PropTypes from "prop-types";
 import ProductList from '../containers/ProductList';
+import Alert from 'react-s-alert';
 
 const App = () => {
     return (
         <div className="container">
+            <Alert stack={{limit: 1}} timeout={3000}/>
             <div className="row">
                 <div className="">
                     <h1>All Items</h1>
