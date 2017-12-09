@@ -1,0 +1,138 @@
+*{
+  margin : 0px;
+  padding: 0px;
+}
+.product-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width : 1000px;
+  margin: 0 auto;
+}
+
+.product-list__item {
+  list-style: none;
+  width: 235px;
+  height : 250px;
+  border:solid 1px #efefef;
+  margin-top: 20px;
+}
+.productDescBanner{
+  background-color: #efefef;
+  height: 70px; 
+}
+.product.thumbnail{
+  position: relative;
+  height: 100%
+  box-sizing: border-box;
+}
+.discountBanner{
+  position: absolute;
+  top:20px;
+  left: 0px;
+  padding: 5px;
+  background: #70c35d;
+}
+.imgContainer{
+  height: 180px;
+  text-align: center;
+}
+
+.imgContainer img{
+  height: 140px;
+  width: 140px;
+  margin-top: 20px;
+}
+.productName{
+  height: 30px;
+  padding: 5px 0 0 5px;
+}
+.productAddContainer{
+  height: 40px
+}
+.product__price{
+  width : 140px;
+  float: left;
+}
+.totalPrice{
+   text-decoration: line-through;
+   text-decoration-color: red;
+}
+.actualPrice{
+  font-weight: bold;
+}
+.addCartBtn{
+  float: right;
+  width:85px;
+}
+.addCartBtn button{
+  border : solid 1px #0099ff;
+  color: #0099ff;
+  padding: 2px;
+  border-radius: 5px;
+}
+.addCartBtn button:hover{
+  color: white;
+  background-color: #0099ff
+}
+
+.checkoutCont{
+  width : 1000px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.cart-list{
+  position: absolute;
+  list-style: none;
+  width : 700px;
+  border : solid 1px black;
+  text-align: left;
+  padding: 5px;
+}
+.cart-list li{
+  width : 100%;
+  padding: 5px 0;
+}
+.cart-list li:first-child{
+  border-bottom: solid  1px grey;
+}
+.cart-list li span{
+  display: inline-block;
+}
+.cart-list li span.item_name{
+  width : 50%;
+}
+.cart-list li span.item_price{
+  width : 25%;
+}
+.cart-list li span.item_qty{
+  width : 25%;
+}
+.crat_Total_cont{
+  position: absolute;
+  right : 10px;
+  width : 250px;
+  border : solid 1px black;
+}
+.crat_Total_cont p{
+  text-align: left;
+}
+.crat_Total_cont p.totalText{
+  padding: 5px;
+}
+.crat_Total_cont .item_key, 
+.crat_Total_cont .item_value{
+  display: inline-block;
+}
+.crat_Total_cont .item_key{
+  width: 70%;
+  text-align: left;
+}
+.crat_Total_cont .item_value{
+  width : 25%;
+  text-align: right;
+  font-weight: bold;
+}
