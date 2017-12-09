@@ -111,6 +111,12 @@
 .cart-list li span.item_qty{
   width : 25%;
 }
+
+.cart-list button.item_update{
+  width : 20px;
+  border-radius: 10px;
+}
+
 .crat_Total_cont{
   position: absolute;
   right : 10px;
@@ -131,11 +137,13 @@
   width: 70%;
   text-align: left;
 }
+
 .crat_Total_cont .item_value{
   width : 25%;
   text-align: right;
   font-weight: bold;
 }
+
 .productAddNotify{
     position: fixed;
     background-color: green;
@@ -144,4 +152,5 @@
     width: 100%;
     text-align: center;
     height: 30px;
+    z-index: 100;
 }

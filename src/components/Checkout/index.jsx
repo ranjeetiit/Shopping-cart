@@ -6,6 +6,14 @@ import CratTotal from './cartTotal';
 import { Link } from 'react-router-dom'
 
 class Checkout extends Component{
+    updateItem = (type, id) => {
+        this.props.updateItem(type , id);
+    }
+
+    handleUpdateItem = (type, id)=> {
+        this.updateItem(type , id);
+    }
+
     render(){
         const {products , cart} = this.props;
         let totalItems = 0;
@@ -55,6 +63,7 @@ class Checkout extends Component{
                               <li key={item.id} className="cart-list-item">
                                 <CartListItem  
                                     list = {item}
+                                    updateItem = { this.handleUpdateItem }
                                 />
                               </li>
                           ))}

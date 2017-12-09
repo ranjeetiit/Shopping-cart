@@ -11,7 +11,13 @@ const CheckoutList = (props) => {
     return (
         <div>
            	<span className = "item_name">{detail.name}</span>
-	        <span className = "item_qty">{qty}</span>
+	        <span className = "item_qty">
+	        	<button className="item_update" onClick={()=> props.updateItem("reduce" , detail.id)} disabled = {qty < 1}> - </button>
+	        		&nbsp;
+	        		{qty}
+	        		&nbsp;
+	        	<button className="item_update" onClick={() => props.updateItem("increase" , detail.id)}> + </button>
+	        </span>
 	        <span className = "item_price">${price}</span>
         </div>
     );
