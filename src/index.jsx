@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import App from 'Components/app';
 import CheckOut from 'Containers/checkout';
-import store from 'store/store';
+import store from 'Store/store';
 import { createBrowserHistory } from 'history';
 import {BrowserRouter as Router , Route} from 'react-router-dom';
 import {  browserHistory } from 'react-router'

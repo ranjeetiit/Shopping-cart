@@ -1,7 +1,7 @@
 import { combineReducers, createStore ,applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
-import productsReducer from '../reducers/product';
-import cartReducer from '../reducers/cart';
+import productsReducer from 'Reducers/product';
+import cartReducer from 'Reducers/cart';
 import productsData from '../json';
 import { routerReducer } from 'react-router-redux'
 

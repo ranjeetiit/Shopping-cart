@@ -2,7 +2,7 @@ import React , { Component } from 'react';
 import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
 import PropTypes from "prop-types";
-import ProductList from '../containers/ProductList';
+import ProductList from 'Containers/ProductList';
 import Alert from 'react-s-alert';
 
 const App = () => {

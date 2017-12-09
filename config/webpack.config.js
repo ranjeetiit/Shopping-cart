@@ -70,6 +70,7 @@ module.exports = {
       Reducers: path.resolve(paths.appSrc, "reducers/"),
       Store: path.resolve(paths.appSrc, "store/"),
       Styles: path.resolve(paths.appSrc, "styles/"),
+      Actions: path.resolve(paths.appSrc, "actions/"),
       Root: path.resolve(paths.appRoot)
     }
   }

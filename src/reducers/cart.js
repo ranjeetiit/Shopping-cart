@@ -1,6 +1,5 @@
 import { getProduct } from './product';
-//import store from '../store/store';
-import { CART_ADD , CART_REMOVE , CART_UPDATE} from '../constants';
+import { CART_ADD , CART_REMOVE , CART_UPDATE} from 'Constants';
 // reducer
 const initialState = {
     items: [], // array of product ids
